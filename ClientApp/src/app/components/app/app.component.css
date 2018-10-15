@@ -1,0 +1,11 @@
+.scrollrow{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.app{
+    width: 100vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.header{
+    text-align: center;
+    border-bottom: 1px black solid;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.item{
+    margin-bottom: 10px;
+    border-color: grey;
+    padding: 10px;
+}

@@ -1,0 +1,22 @@
+<div class="header">
+  <h3>Clients</h3>
+  <div>
+    <input [(ngModel)]="firstName" type="text" placeholder="first name" class="col-6 input"/>
+    <select [(ngModel)]="selectedValue">
+      <option *ngFor="let item of cities" [ngValue]="item" class="col-6 input">{{item}}</option>
+    </select>
+  </div>
+</div>
+<div class="card item clickable" *ngFor="let client of clients | filter:[firstName,selectedValue]" (click)="changeTab(client)">
+  <div style="text-align:center;">
+    <strong>{{client.firstName}} {{client.lastName}}</strong>
+  </div>
+  <div>
+    Address:
+    {{client.address}}
+  </div>
+  <div>
+    Phone numbers:
+    {{client.phoneNumbers}}
+  </div>
+</div>

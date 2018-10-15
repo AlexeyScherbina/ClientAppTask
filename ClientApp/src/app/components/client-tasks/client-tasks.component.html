@@ -1,0 +1,29 @@
+<div class="header">
+  <h3>Tasks</h3>
+</div>
+<div class="card item" *ngFor="let task of client.tasks">
+  <div style="text-align:center;">
+    <strong>{{task.taskName}}</strong>
+  </div>
+  <div>
+    Description: 
+    {{task.description}}
+  </div>
+  <div>
+    Client address:
+    {{client.address}}
+  </div>
+  <div>
+    <div>
+      Start time:
+      {{task.startTime | date}}
+    </div>
+    <div>
+      End time:
+      {{task.endTime | date}}
+    </div>
+  </div>
+  <div>
+    <button class="btn" style="float:right;" (click)="deleteTask(task)">Delete</button>
+  </div>
+</div>
