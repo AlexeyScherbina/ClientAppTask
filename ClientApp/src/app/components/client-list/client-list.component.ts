@@ -11,9 +11,10 @@ import { Client } from '../../models/client';
 export class ClientListComponent implements OnInit {
 
   clients: Client[];
-  cities = ['New York', 'Paris', 'Tokyo', 'Dubai', 'London', 'Moscow', 'Kiev', 'Berlin', ''];
+  cities = ['New York', 'Paris', 'Tokyo', 'Dubai', 'London', 'Moscow', 'Kiev', 'Berlin', 'any'];
   firstName = '';
-  selectedValue = '';
+  selectedCity = '';
+  tab = -1;
 
   constructor(private clientService: ClientService, private taskTab: TaskTabService) {}
 
@@ -23,5 +24,6 @@ export class ClientListComponent implements OnInit {
 
   changeTab(client) {
     this.taskTab.changeClient(client);
+    this.tab = this.clients.indexOf(client);
   }
 }

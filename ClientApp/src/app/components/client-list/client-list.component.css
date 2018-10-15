@@ -5,3 +5,7 @@
 .input{
     height: 24px;
 }
+
+.selected{
+    background-color: rgb(157, 206, 206);
+}

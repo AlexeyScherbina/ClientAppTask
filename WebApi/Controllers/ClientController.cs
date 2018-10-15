@@ -72,18 +72,9 @@ namespace TestTask.Controllers
         }
 
         #region Default values
-        private static string[] firstNames = new[]
-        {
-            "John", "Peter", "James", "Bill", "Ann", "Kate", "Donald", "Sam", "Alex", "David"
-        };
-        private static string[] lastNames = new[]
-        {
-            "Black", "Brown", "Stone", "Smith", "Johnson", "Williams", "Miller", "Wilson", "Jackson", "Turner"
-        };
-        private static string[] cities = new[]
-        {
-            "New York", "Paris", "Tokyo", "Dubai", "London", "Moscow", "Kiev", "Berlin"
-        };
+        private static string[] firstNames = { "John", "Peter", "James", "Bill", "Ann", "Kate", "Donald", "Sam", "Alex", "David" };
+        private static string[] lastNames = { "Black", "Brown", "Stone", "Smith", "Johnson", "Williams", "Miller", "Wilson", "Jackson", "Turner" };
+        private static string[] cities = { "New York", "Paris", "Tokyo", "Dubai", "London", "Moscow", "Kiev", "Berlin" };
         private static string description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in mollis augue. Mauris tincidunt molestie placerat. Suspendisse eros augue, lacinia vitae neque at, gravida eleifend ligula. Duis viverra hendrerit dictum. Curabitur nec ornare nunc, in dapibus magna.";
         #endregion
     }
